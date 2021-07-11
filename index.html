@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>Guest List</title>
+
+
+<body>
+
+    <center>
+
+        <script src="main.JS">
+            //    document.getElementById("myButton").onclick = add_Guests();
+        </script>
+
+        <table border="5">
+            <tr>
+                <td>
+                    <h1>Guest List</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="enter_name">Enter name:</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="gname" name="gname">
+
+                    <button onclick=add_Guests() id="submitButton" class="float-left submit-button" type="button">Submit
+                        to List</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick=show_Guests() id="showButton" type="button">Show List</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="guest_list"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button onclick=sort_Guests() id="sortButton" x type="button">Sort
+                        List</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="sorted_guest_list"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" id="sname" name="sname">
+
+                    <button onclick=search_Guests() id="searchButton" type="button">Search List</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="search_guest_list"></p>
+                </td>
+            </tr>
+
+        </table>
+    </center>
+</body>
+
+</html>
